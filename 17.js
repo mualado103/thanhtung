@@ -158,9 +158,9 @@ function Cart() {
 	e.shippingCost = 0;
 	e.currency = VND;
 	e.checkoutTo = PayPal;
-	e.email = "cuahangtemplate@gmail.com";
+	e.email = "mualado103@gmail.com";
 	e.merchantId = "";
-	e.successUrl = "http://bizxinh.blogspot.com";
+	e.successUrl = "http://www.thanhtungsmartphone.com/";
 	e.cancelUrl = null;
 	e.entry = "";
 	e.entryURL = "";
@@ -365,7 +365,7 @@ function Cart() {
 	};
 	e.emailCheckout = function () {
 		var e = this;
-		e.entryURL = "http://hungthinhvlxd.blogspot.com/p/mua-hang.html";
+		e.entryURL = "http://www.thanhtungsmartphone.com/p/mua-hang.html";
 		window.open(e.entryURL, "_parent");
 		return
 	};
