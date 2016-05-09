@@ -536,7 +536,7 @@ function Cart() {
 			r.className = "itemContainer group";
 			t[i + 1] = r
 		});
-		d += "\n\n - Tá»•ng Tiá»n: " + number_format(v, 0, ".", ",") + " (VNÄ)";
+		d += "\n\n - Tổng tiền: " + number_format(v, 0, ".", ",") + " (VNĐ)";
 		try {
 			e.entry = "entry_548453695";
 			document.getElementById(e.entry).innerHTML = d
