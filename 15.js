@@ -12,10 +12,10 @@ function chitietsp(e, t, n) {
 	var o = e.innerHTML.substring(e.innerHTML.indexOf("[tomtat]") + 8, e.innerHTML.indexOf("[/tomtat]")),
 	u = e.innerHTML.substring(e.innerHTML.indexOf("[giaban]") + 8, e.innerHTML.indexOf("[/giaban]"));
 	tintuc = e.innerHTML.substring(e.innerHTML.indexOf("[tintuc]") + 8, e.innerHTML.indexOf("[/tintuc]"));
-	kythuat = -1 != e.innerHTML.indexOf("[kythuat]") ? e.innerHTML.substring(e.innerHTML.indexOf("[kythuat]") + 9, e.innerHTML.indexOf("[/kythuat]")) : "Đang cập nhật";
-	mota = -1 != e.innerHTML.indexOf("[mota]") ? e.innerHTML.substring(e.innerHTML.indexOf("[mota]") + 6, e.innerHTML.indexOf("[/mota]")) : "Đang cập nhật";
-	hinhanh = -1 != e.innerHTML.indexOf("[mota]") ? e.innerHTML.substring(e.innerHTML.indexOf("[hinhanh]") + 9, e.innerHTML.indexOf("[/hinhanh]")) : "Đang cập nhật";
-	e.innerHTML = -1 != e.innerHTML.indexOf("[tintuc]") ? '<div class="tintuc"><h2 class="newstitle"><a href="' + n + '">' + t + "</a></h2><p>" + tintuc + '</p><div class="clear"></div>': '<div class="w-detail group simpleCart_shelfItem"><div id="img_' + r + '" class="large-6 medium-6 column"><a class="th" href="' + s[0].src + '">' + i + ' </a><div class="addthis_toolbox addthis_default_style "><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a></div></div><div class="large-6 medium-6 column"><div class="title item_name"><h1>' + t + '</h1></div><div class="w-giaban">Giá bán: <b class="item_price">' + u + "</b></div>" + o + '<br/><br/><div class="boxbuy"><div class="soluong"><input type="number" name="quantity" min="1" max="100" value="1" class="item_quantity"></div><div class="btnMore"><a title ="" target="_blank" href="javascript:void(0);" class="item_add addtocart" rel="' + r + '">Đặt hàng</a></div></div></div><div class="clear"></div><div id="horizontalTab" class="r-tabs"><div class="tab-side r-tabs-nav"><div class="r-tabs-state-default r-tabs-tab"><a class="active" href="#tab-1">Chi tiết sản phẩm</a></div></div><div class="tabs-container">' + kythuat + "</div></div></div>"
+	kythuat = -1 != e.innerHTML.indexOf("[kythuat]") ? e.innerHTML.substring(e.innerHTML.indexOf("[kythuat]") + 9, e.innerHTML.indexOf("[/kythuat]")) : "ThĂ´ng sá»‘ ká»¹ thuáº­t chÆ°a Ä‘Æ°á»£c cáº­p nháº­t";
+	mota = -1 != e.innerHTML.indexOf("[mota]") ? e.innerHTML.substring(e.innerHTML.indexOf("[mota]") + 6, e.innerHTML.indexOf("[/mota]")) : "KhĂ´ng cĂ³ mĂ´ táº£ cho sáº£n pháº©m nĂ y";
+	hinhanh = -1 != e.innerHTML.indexOf("[mota]") ? e.innerHTML.substring(e.innerHTML.indexOf("[hinhanh]") + 9, e.innerHTML.indexOf("[/hinhanh]")) : "KhĂ´ng cĂ³ hĂ¬nh áº£nh cho sáº£n pháº©m nĂ y";
+	e.innerHTML = -1 != e.innerHTML.indexOf("[tintuc]") ? '<div class="tintuc"><h2 class="newstitle"><a href="' + n + '">' + t + "</a></h2><p>" + tintuc + '</p><div class="clear"></div>': '<div class="w-detail group simpleCart_shelfItem"><div id="img_' + r + '" class="large-6 medium-6 column"><a class="th" href="' + s[0].src + '">' + i + ' </a><div class="addthis_toolbox addthis_default_style "><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a></div></div><div class="large-6 medium-6 column"><div class="title item_name"><h1>'+ t +'</h1></div><div class="w-giaban">Giá bán: <b class="item_price">' + u + "</b></div>" + o + '<br/><br/><div class="boxbuy"><div class="soluong"><input type="number" name="quantity" min="1" max="100" value="1" class="item_quantity"></div><div class="btnMore"><a title ="" target="_blank" href="javascript:void(0);" class="item_add addtocart" rel="' + r + '">Đặt Hàng</a></div></div></div><div class="clear"></div><div id="horizontalTab" class="r-tabs"><div class="tab-side r-tabs-nav"><div class="r-tabs-state-default r-tabs-tab"><a class="active" href="#tab-1">Chi tiết sản phẩm</a></div></div><div class="tabs-container">' + kythuat + "</div></div></div>"
 }
 function homepage(e, t, n) {
 	var r = e.substring(7);
@@ -25,7 +25,7 @@ function homepage(e, t, n) {
 	1 <= s.length && (i = '<img src="' + s[0].src + '"/>');
 	price = e.innerHTML.substring(e.innerHTML.indexOf("[giaban]") + 8, e.innerHTML.indexOf("[/giaban]"));
 	sumpost = e.innerHTML.substring(e.innerHTML.indexOf("[tintuc]") + 8, e.innerHTML.indexOf("[/tintuc]"));
-	t = -1 != e.innerHTML.indexOf("[tintuc]") ? "": '<div class="box_item simpleCart_shelfItem"><div id="img_' + r + '" class="img"><a  href="' + n + '">' + i + '</a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + n + '" class="item_name">' + removeHtmlTag(t, sumtitle) + '</a></div><div class="clear"></div><div class="p_price"><span class="price_lft"><b class="item_price">' + price + ' </b><b>&nbsp;đ</b></span><a class="addtocart" rel="' + r + '"  href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div>';
+	t = -1 != e.innerHTML.indexOf("[tintuc]") ? "": '<div class="box_item simpleCart_shelfItem"><div id="img_' + r + '" class="img"><a  href="' + n + '">' + i + '</a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + n + '" class="item_name">' + removeHtmlTag(t, sumtitle) + '</a></div><div class="clear"></div><div class="p_price"><span class="price_lft"><b class="item_price">' + price + ' </b><b>&nbsp;₫</b></span><a class="addtocart" rel="' + r + '"  href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div>';
 	e.innerHTML = t
 }
 function relatedproduct(e) {
@@ -59,7 +59,7 @@ function relatedproduct(e) {
 		postdate.split("-")[2].substring(0, 2);
 		u = postdate.split("-")[1];
 		postdate.split("-");
-		for (var f = t.substring(t.indexOf("[giaban]") + 8, t.indexOf("[/giaban]")), l = 0; l < r.length && parseInt(u) != r[l]; l++); - 1 != t.indexOf("[tintuc]") ? document.write('<li><a href="' + o + '">' + i + '</a></li><div class="clear"></div>') : document.write('<div class="win-6 medium-4 large-3 column item"><div class="item-thumb"><a class="th" href="' + o + '"><img title="' + i + '" alt="' + i + '" src="' + img[n] + '"/></a></div><div class="item-info"><div class="title"><a href="' + o + '">' + i + '</a></div><div class="price">GiÄ‚Â¡ BÄ‚Â¡n:<span class="price_rgt">' + f + '</span></div></div><div class="clear"></div></div>');
+		for (var f = t.substring(t.indexOf("[giaban]") + 8, t.indexOf("[/giaban]")), l = 0; l < r.length && parseInt(u) != r[l]; l++); - 1 != t.indexOf("[tintuc]") ? document.write('<li><a href="' + o + '">' + i + '</a></li><div class="clear"></div>') : document.write('<div class="win-6 medium-4 large-3 column item"><div class="item-thumb"><a class="th" href="' + o + '"><img title="' + i + '" alt="' + i + '" src="' + img[n] + '"/></a></div><div class="item-info"><div class="title"><a href="' + o + '">' + i + '</a></div><div class="price">GiĂ¡ BĂ¡n:<span class="price_rgt">' + f + '</span></div></div><div class="clear"></div></div>');
 		j++
 	}
 }
@@ -83,7 +83,7 @@ function labelproduct(e) {
 		u = "content" in n ? n.content.$t: "summary" in n ? n.summary.$t: "";
 		giaban = u.substring(u.indexOf("[giaban]") + 8, u.indexOf("[/giaban]"));
 		hinh = -1 != u.indexOf("[hinh]") ? u.substring(u.indexOf("[hinh]") + 6, u.indexOf("[/hinh]")) : "";
-		kythuat = -1 != u.indexOf("[kythuat]") ? u.substring(u.indexOf("[kythuat]") + 9, u.indexOf("[/kythuat]")) : "KhÄ‚Â´ng cÄ‚Â³ mÄ‚Â´ tĂ¡ÂºÂ£ cho sĂ¡ÂºÂ£n phĂ¡ÂºÂ©m nÄ‚ y";
+		kythuat = -1 != u.indexOf("[kythuat]") ? u.substring(u.indexOf("[kythuat]") + 9, u.indexOf("[/kythuat]")) : "KhĂ´ng cĂ³ mĂ´ táº£ cho sáº£n pháº©m nĂ y";
 		postdate = n.published.$t;
 		j > imgr.length - 1 && (j = 0);
 		img[t] = imgr[j];
@@ -97,7 +97,7 @@ function labelproduct(e) {
 		u = postdate.split("-")[1];
 		postdate.split("-");
 		for (var f = 0; f < n.length && parseInt(u) != n[f]; f++);
-		r = '<div class="win-6 medium-4 large-3 column item"><div class="box_item simpleCart_shelfItem"><div id="img_' + o[1] + '" class="img"><a  href="' + i + '"><img  class="item_thumb" src="' + img[t] + '" /></a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + i + '" class="item_name">' + removeHtmlTag(r, labelsumtitle) + '</a></div><div class="p_price"><span class="price_lft"><b class="item_price">' + giaban + ' </b><b>&nbsp;đ</b></span><a class="addtocart" rel="' + o[1] + '" href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div></div> ';
+		r = '<div class="win-6 medium-4 large-3 column item"><div class="box_item simpleCart_shelfItem"><div id="img_' + o[1] + '" class="img"><a  href="' + i + '"><img  class="item_thumb" src="' + img[t] + '" /></a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + i + '" class="item_name">' + removeHtmlTag(r, labelsumtitle) + '</a></div><div class="p_price"><span class="price_lft"><b class="item_price">' + giaban + ' </b><b>&nbsp;₫</b></span><a class="addtocart" rel="' + o[1] + '" href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div></div> ';
 		document.write(r);
 		j++
 	}
@@ -120,7 +120,7 @@ function lft_product(e) {
 		}
 		o = "content" in n ? n.content.$t: "summary" in n ? n.summary.$t: "";
 		giaban = o.substring(o.indexOf("[giaban]") + 8, o.indexOf("[/giaban]"));
-		kythuat = -1 != o.indexOf("[kythuat]") ? o.substring(o.indexOf("[kythuat]") + 9, o.indexOf("[/kythuat]")) : "KhÄ‚Â´ng cÄ‚Â³ mÄ‚Â´ tĂ¡ÂºÂ£ cho sĂ¡ÂºÂ£n phĂ¡ÂºÂ©m nÄ‚ y";
+		kythuat = -1 != o.indexOf("[kythuat]") ? o.substring(o.indexOf("[kythuat]") + 9, o.indexOf("[/kythuat]")) : "KhĂ´ng cĂ³ mĂ´ táº£ cho sáº£n pháº©m nĂ y";
 		postdate = n.published.$t;
 		j > imgr.length - 1 && (j = 0);
 		img[t] = imgr[j];
@@ -158,9 +158,9 @@ function Cart() {
 	e.shippingCost = 0;
 	e.currency = VND;
 	e.checkoutTo = PayPal;
-	e.email = "mualado103@gmail.com";
+	e.email = "cuahangtemplate@gmail.com";
 	e.merchantId = "";
-	e.successUrl = "http://www.thanhtungsmartphone.com/";
+	e.successUrl = "http://bizxinh.blogspot.com";
 	e.cancelUrl = null;
 	e.entry = "";
 	e.entryURL = "";
@@ -365,7 +365,7 @@ function Cart() {
 	};
 	e.emailCheckout = function () {
 		var e = this;
-		e.entryURL = "http://www.thanhtungsmartphone.com/p/mua-hang.html";
+		e.entryURL = "http://hungthinhvlxd.blogspot.com/p/mua-hang.html";
 		window.open(e.entryURL, "_parent");
 		return
 	};
@@ -375,7 +375,7 @@ function Cart() {
 		n = "https://www.nganluong.vn/button_payment.php?receiver=" + e.email,
 		r = 1,
 		i = "",
-		s = "&comments=Thanh%undefinedÂ¡n Ă„Â‘NÂºÂ·t%undefinedÂ ng%undefinedÂ»%undefinedÂº}",
+		s = "&comments=Thanh%undefined¡n ÄNº·t%undefined ng%undefined»%undefinedº}",
 		o = 0,
 		u, a, f, l;
 		e.each(function (e, t) {
@@ -536,9 +536,9 @@ function Cart() {
 			r.className = "itemContainer group";
 			t[i + 1] = r
 		});
-		d += "\n\n - Tổng tiền: " + number_format(v, 0, ".", ",") + " (VNĐ)";
+		d += "\n\n - Tổng Tiền: " + number_format(v, 0, ".", ",") + " (VNĐ)";
 		try {
-			e.entry = "entry_548453695";
+			e.entry = "entry_1149005037";
 			document.getElementById(e.entry).innerHTML = d
 		} catch(m) {}
 		for (var g = 0, y = e.cartDivs.length; g < y; g++) {
@@ -648,7 +648,7 @@ function Cart() {
 			return "&#3647;";
 		case USD:
 		case VND:
-			return "&nbsp;đ";
+			return "&nbsp;₫";
 		case CAD:
 		case AUD:
 		case NZD:
