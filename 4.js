@@ -25,7 +25,7 @@ function homepage(e, t, n) {
 	1 <= s.length && (i = '<img src="' + s[0].src + '"/>');
 	price = e.innerHTML.substring(e.innerHTML.indexOf("[giaban]") + 8, e.innerHTML.indexOf("[/giaban]"));
 	sumpost = e.innerHTML.substring(e.innerHTML.indexOf("[tintuc]") + 8, e.innerHTML.indexOf("[/tintuc]"));
-	t = -1 != e.innerHTML.indexOf("[tintuc]") ? "": '<div class="box_item simpleCart_shelfItem"><div id="img_' + r + '" class="img"><a  href="' + n + '">' + i + '</a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + n + '" class="item_name">' + removeHtmlTag(t, sumtitle) + '</a></div><div class="clear"></div><div class="p_price"><span class="price_lft"><b class="item_price">' + price + ' </b><b>&nbsp;đ‚«</b></span><a class="addtocart" rel="' + r + '"  href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div>';
+	t = -1 != e.innerHTML.indexOf("[tintuc]") ? "": '<div class="box_item simpleCart_shelfItem"><div id="img_' + r + '" class="img"><a  href="' + n + '">' + i + '</a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + n + '" class="item_name">' + removeHtmlTag(t, sumtitle) + '</a></div><div class="clear"></div><div class="p_price"><span class="price_lft"><b class="item_price">' + price + ' </b><b>&nbsp;đ</b></span><a class="addtocart" rel="' + r + '"  href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div>';
 	e.innerHTML = t
 }
 function relatedproduct(e) {
@@ -97,7 +97,7 @@ function labelproduct(e) {
 		u = postdate.split("-")[1];
 		postdate.split("-");
 		for (var f = 0; f < n.length && parseInt(u) != n[f]; f++);
-		r = '<div class="win-6 medium-4 large-3 column item"><div class="box_item simpleCart_shelfItem"><div id="img_' + o[1] + '" class="img"><a  href="' + i + '"><img  class="item_thumb" src="' + img[t] + '" /></a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + i + '" class="item_name">' + removeHtmlTag(r, labelsumtitle) + '</a></div><div class="p_price"><span class="price_lft"><b class="item_price">' + giaban + ' </b><b>&nbsp;đ‚«</b></span><a class="addtocart" rel="' + o[1] + '" href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div></div> ';
+		r = '<div class="win-6 medium-4 large-3 column item"><div class="box_item simpleCart_shelfItem"><div id="img_' + o[1] + '" class="img"><a  href="' + i + '"><img  class="item_thumb" src="' + img[t] + '" /></a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + i + '" class="item_name">' + removeHtmlTag(r, labelsumtitle) + '</a></div><div class="p_price"><span class="price_lft"><b class="item_price">' + giaban + ' </b><b>&nbsp;đ</b></span><a class="addtocart" rel="' + o[1] + '" href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div></div> ';
 		document.write(r);
 		j++
 	}
@@ -648,7 +648,7 @@ function Cart() {
 			return "&#3647;";
 		case USD:
 		case VND:
-			return "&nbsp;â‚«";
+			return "&nbsp;đ";
 		case CAD:
 		case AUD:
 		case NZD:
