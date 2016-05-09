@@ -158,7 +158,7 @@ function Cart() {
 	e.shippingCost = 0;
 	e.currency = VND;
 	e.checkoutTo = PayPal;
-	e.email = "";
+	e.email = "mualado103@gmail.com";
 	e.merchantId = "";
 	e.successUrl = "http://www.thanhtungsmartphone.com/";
 	e.cancelUrl = null;
