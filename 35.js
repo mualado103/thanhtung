@@ -23,9 +23,9 @@ function homepage(e, t, n) {
 	var i = "",
 	s = e.getElementsByTagName("img");
 	1 <= s.length && (i = '<img src="' + s[0].src + '"/>');
-	price = e.innerHTML.substring(e.innerHTML.indexOf("[giaban]") + 8, e.innerHTML.indexOf("[/giaban]"));
+
 	sumpost = e.innerHTML.substring(e.innerHTML.indexOf("[tintuc]") + 8, e.innerHTML.indexOf("[/tintuc]"));
-	t = -1 != e.innerHTML.indexOf("[tintuc]") ? "": '<div class="box_item simpleCart_shelfItem"><div id="img_' + r + '" class="img"><a  href="' + n + '">' + i + '</a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + n + '" class="item_name">' + removeHtmlTag(t, sumtitle) + '</a></div><div class="clear"></div><div class="p_price"><span class="price_lft"><b class="item_price">' + price + ' </b><b>&nbsp;₫</b></span><a class="addtocart" rel="' + r + '"  href="javascript:void(0);"><span class="item_add view_rgt">Mua</span></a></div></div></div>';
+	t = -1 != e.innerHTML.indexOf("[tintuc]") ? "": '<div class="box_item simpleCart_shelfItem"><div id="img_' + r + '" class="img"><a  href="' + n + '">' + i + '</a></div><div class="pro_content"><div class="clear"></div><div class="p_title"><a href="' + n + '" class="item_name">' + removeHtmlTag(t, sumtitle) + '</a></div><div class="clear"></div></div></div>';
 	e.innerHTML = t
 }
 function relatedproduct(e) {
